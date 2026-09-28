@@ -1,0 +1,56 @@
+MiniGPT Final Project — Results Summary
+Author: Parth Rohilla
+Standalone Portfolio Version
+
+MODEL
+-----
+Architecture: Decoder-Only Transformer
+Tokenization: Character-Level
+Dataset: Tiny Shakespeare
+Vocabulary Size: 65
+Trainable Parameters: 824,897
+Context Length: 128 characters
+Embedding Dimension: 128
+Attention Heads: 4
+Transformer Layers: 4
+
+TRAINING CONFIGURATION
+----------------------
+Batch Size: 64
+Learning Rate: 0.0003
+Training Iterations: 1000
+Evaluation Iterations: 20
+Evaluation Interval: 100
+Dropout: 0.1
+
+LOSS RESULTS
+------------
+Initial Training Loss: 4.3086
+Final Training Loss:   2.0549
+
+Initial Validation Loss: 4.3154
+Final Validation Loss:   2.0933
+
+The final train-validation gap remained relatively small in this experiment,
+while both losses decreased substantially during training.
+
+BIGRAM VS MINIGPT
+-----------------
+The Bigram baseline generated mostly random-looking character sequences because
+it uses only the current token. MiniGPT produced more structured text by using
+preceding context through causal self-attention.
+
+SAMPLE MINIGPT OUTPUT
+---------------------
+My sstxear
+And you aftt, coo.
+Why Gofen: umeld Tearty thy be bus of sitin but,
+Thou loshe in me seswo muty knought sow,
+Yow thy yout shan mewe th: gathty hant menoce,
+Wo sunore thou fove not and dot fo darr.
+
+WEELY:
+Reast, sive flaw not dow ourighy, ond thagh soe?
+Be WAfbla Nor fame as hem fould ung
+
+Note: Generation is stochastic, so new runs may produce different text.

@@ -1,0 +1,18 @@
+{
+    "model_name": "MiniGPT",
+    "model_type": "Decoder-Only Transformer",
+    "dataset": "Tiny Shakespeare",
+    "tokenization": "Character-Level",
+    "vocab_size": 65,
+    "trainable_parameters": 824897,
+    "batch_size": 64,
+    "block_size": 128,
+    "n_embd": 128,
+    "n_head": 4,
+    "n_layer": 4,
+    "dropout": 0.1,
+    "learning_rate": 0.0003,
+    "max_iters": 1000,
+    "eval_iters": 20,
+    "eval_interval": 100
+}
